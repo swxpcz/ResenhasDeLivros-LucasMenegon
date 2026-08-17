@@ -32,32 +32,88 @@ html {
 
 body {
     background:
-        radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.22), transparent 28%),
-        radial-gradient(circle at 85% 75%, rgba(48, 70, 56, 0.07), transparent 30%),
-        linear-gradient(135deg, #ddd5c3 0%, #d4ccb8 50%, #d9d1bd 100%);
-    background-attachment: fixed;
+        radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.45), transparent 25%),
+        radial-gradient(circle at 80% 85%, rgba(48, 70, 56, 0.06), transparent 30%),
+        #ddd6c4;
+
     color: var(--text);
     font-family: var(--sans);
     line-height: 1.6;
     min-height: 100vh;
+
+    position: relative;
 }
 
-/* subtle paper texture */
+/* DOODLE BACKGROUND */
 
 body::before {
-    content: "";
+    content:
+        "✦       ✎             ☕        ✧"
+        "       ───────                 ⋆"
+        "  📖                 ✒              ☾"
+        "            ♧       ✦"
+        " ✧                  ─────"
+        "       ☕       📖             ⋆"
+        "                  ✎"
+        "  ✦       ♧                 ✧"
+        "            ✒             📖"
+        "      ─────────────"
+        "                         ☾      ✦"
+        "  📖          ⋆             ☕"
+        "        ✧             ✎"
+        "                 ♧"
+        "  ✒                         ✦"
+        "          📖       ─────"
+        "  ⋆                  ☕"
+        "              ✧"
+        "       ✎                  📖"
+        "  ♧             ✦              ✒"
+        "              ☾"
+        "     ────────────"
+        "  ✧       📖              ⋆"
+        "                  ☕"
+        "       ♧                   ✦"
+        "  ✒             ✎"
+        "                         📖"
+        "       ⋆              ✧"
+        "  ☕                   ♧"
+        "            ✦"
+        "       📖          ✒"
+        "  ────────                    ☾"
+        "             ✧       ⋆"
+        "  ✎                   📖"
+        "                    ☕"
+        "       ♧          ✦"
+        "  ✒             ───────"
+        "              ✧"
+        "       📖                  ⋆"
+        "  ☕                         ✎"
+        "            ♧"
+        "  ✦               ☾"
+        "       ✒             📖"
+        "           ─────────"
+        "  ⋆                       ✧";
+
     position: fixed;
-    inset: 0;
+    inset: -40px;
+
     z-index: -1;
     pointer-events: none;
-    opacity: 0.16;
 
-    background-image:
-        radial-gradient(rgba(40, 40, 30, 0.12) 0.6px, transparent 0.6px),
-        radial-gradient(rgba(255, 255, 255, 0.18) 0.7px, transparent 0.7px);
+    color: rgba(48, 70, 56, 0.13);
 
-    background-size: 7px 7px, 11px 11px;
-    background-position: 0 0, 4px 5px;
+    font-family: "IM Fell English", Georgia, serif;
+    font-size: 22px;
+    line-height: 4.4;
+    letter-spacing: 12px;
+
+    white-space: pre-wrap;
+    overflow: hidden;
+
+    transform: rotate(-2deg) scale(1.08);
+    transform-origin: center;
+
+    opacity: 0.85;
 }
 
 ::selection {
