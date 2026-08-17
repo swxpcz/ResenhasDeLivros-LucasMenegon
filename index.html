@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Leitura — Lucas Menegon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">CADERNO DE LEITURAS</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+            <p class="eyebrow"> MEU ARQUIVO PESSOAL</p>
+            <h1>RESENHAS POR<br>LUCAS MENEGON</h1>
+        </section>
+
+        <section class="books-section">
+            <div id="books-grid" class="books-grid">
+                <!-- Os livros serão inseridos pelo JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Lucas Menegon</p>
+            <span>Meus registros após finalizar uma leitura!</span>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="book-modal" class="modal" aria-hidden="true">
+
+        <div class="modal-content">
+
+            <button id="close-modal" class="close-modal" aria-label="Fechar">
+                ×
+            </button>
+
+            <div class="modal-body">
+
+                <div class="modal-cover">
+                    <img id="modal-cover" src="" alt="">
+                </div>
+
+                <div class="modal-info">
+
+                    <p class="modal-label">RESENHA</p>
+
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-author" class="modal-author"></p>
+
+                    <div class="reading-date">
+                        <div>
+                            <span>COMECEI</span>
+                            <strong id="modal-start"></strong>
+                        </div>
+
+                        <div>
+                            <span>TERMINEI</span>
+                            <strong id="modal-finish"></strong>
+                        </div>
+                    </div>
+
+                    <div class="modal-rating">
+                        <span>AVALIAÇÃO</span>
+                        <strong id="modal-rating"></strong>
+                    </div>
+
+                    <div class="quotes">
+                        <h3>Frases favoritas</h3>
+                        <div id="modal-quotes"></div>
+                    </div>
+
+                    <div class="review">
+                        <h3>Minha resenha</h3>
+                        <p id="modal-review"></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

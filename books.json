@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Peter Pan",
+        "author": "J. M. Barrie",
+        "cover": "assets/covers/peter-pan.jpg",
+        "startDate": "15/08/2026",
+        "finishDate": "xx/xx/xxxx",
+        "rating": 5,
+        "quotes": [
+            "Ainda estou lendo.",
+            "Ainda estou lendo.",
+            "Ainda estou lendo."
+        ],
+        "review": "Estou gostando muito da leitura e estou ansioso para escrever algo sobre."
+    }
+]
