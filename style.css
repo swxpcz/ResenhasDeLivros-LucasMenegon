@@ -30,6 +30,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     background:
         radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.45), transparent 25%),
@@ -202,6 +207,7 @@ body::before {
 
 .book-card {
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     transition:
         transform 0.4s var(--ease),
         opacity 0.4s var(--ease);
@@ -545,6 +551,7 @@ body::before {
 
     .modal {
         padding: 12px;
+        backdrop-filter: blur(4px);
     }
 
     .modal-content {
